@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f6f4ef;
+  --color-canvas: #f4f5f7;
+  --color-surface: #ffffff;
+  --color-ink: #15161a;
+  --color-ink-2: #3c414b;
+  --color-muted: #6b7280;
+  --color-line: #e4e5e8;
+  --color-line-2: #d3d6dc;
+  --color-brand: #b9a27a;
+  --color-gold: #8a6d3b;
+  --color-gold-soft: #f3eee4;
+  --color-black: #000000;
+  --color-good: #2f7d4f;
+  --color-good-soft: #e6f2ea;
+  --color-warn: #a86b12;
+  --color-warn-soft: #fbf1df;
+  --color-bad: #b42318;
+  --color-bad-soft: #fbe9e7;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+}
+
+body { background: var(--color-canvas); color: var(--color-ink); font-family: var(--font-sans); }
+.tabular { font-variant-numeric: tabular-nums; }
+.field { display:block; width:100%; border:1px solid var(--color-line-2); background:#fff; border-radius:8px; padding:.55rem .75rem; font-size:.9rem; color:var(--color-ink); outline:none; }
+.field:focus { border-color: var(--color-ink); box-shadow: 0 0 0 3px rgba(21,22,26,.1); }
+.label { display:block; font-size:.75rem; font-weight:600; color:var(--color-ink-2); margin-bottom:.3rem; }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:.4rem; border-radius:8px; padding:.55rem .95rem; font-size:.875rem; font-weight:600; cursor:pointer; white-space:nowrap; }
+.btn:disabled { opacity:.55; cursor:default; }
+.btn-primary { background: var(--color-ink); color:#fff; }
+.btn-primary:hover { background:#2b2f36; }
+.btn-secondary { background:#fff; color:var(--color-ink); border:1px solid var(--color-line-2); }
+.btn-secondary:hover { border-color: var(--color-ink-2); }
+.btn-sm { padding:.35rem .65rem; font-size:.8rem; }
+.table { width:100%; font-size:.85rem; border-collapse:separate; border-spacing:0; }
+.table th { text-align:left; font-weight:600; font-size:.68rem; text-transform:uppercase; letter-spacing:.06em; color:var(--color-muted); padding:.6rem .75rem; border-bottom:1px solid var(--color-line); background:#fbfbfc; white-space:nowrap; }
+.table td { padding:.6rem .75rem; border-bottom:1px solid var(--color-line); vertical-align:middle; }
+.table tr:last-child td { border-bottom:0; }
+.article p { font-family: var(--font-serif); font-size: 1.14rem; line-height: 1.75; color: #262b33; margin: 0 0 1.2rem; }
+:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; }
