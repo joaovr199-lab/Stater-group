@@ -1,0 +1,8 @@
+# Arquivos gerados e capturas de teste
+/shots
+next-env.d.ts
+*.tsbuildinfo
+node_modules
+.next
+.env*
+!.env.example
